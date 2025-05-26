@@ -12,5 +12,5 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true
   },
-  // base: '/air-conditioner-simulator/'
+  base: '/air-conditioner-simulator/'
 })
