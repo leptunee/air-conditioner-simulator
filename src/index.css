@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+  
+  .btn-primary {
+    @apply bg-yellow-400 hover:bg-yellow-300 text-black border-2 border-black;
+  }
+  
+  .btn-secondary {
+    @apply bg-black hover:bg-gray-800 text-yellow-400 border-2 border-yellow-400;
+  }
+  
+  .btn-danger {
+    @apply bg-yellow-400 hover:bg-yellow-300 text-black border-2 border-black;
+  }
+  
+  .btn-success {
+    @apply bg-yellow-400 hover:bg-yellow-300 text-black border-2 border-black;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* 页面背景 */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
