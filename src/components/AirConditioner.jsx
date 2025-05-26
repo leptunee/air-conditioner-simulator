@@ -43,7 +43,7 @@ const AirConditioner = ({ isOn, temperature, mode, fanSpeed, swingMode }) => {  
             <div className="text-center mb-4">
               <div className="flex flex-col items-center">
                 <img 
-                  src="/Screenshot_20250526_150046.png" 
+                  src="/xihuangcun.png" 
                   alt="空调标识" 
                   className="w-12 h-12 mb-2 object-contain"
                 />
