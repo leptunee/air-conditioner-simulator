@@ -78,7 +78,7 @@ const RemoteControl = ({
           +
         </button>
       </div>      {/* 模式按钮 */}
-      <div className="grid grid-cols-2 gap-6 mb-6">
+      <div className="grid grid-cols-2 gap-x-10 gap-y-4 mb-6">
         {[
           { key: 'cool', label: '制冷', icon: '❄️' },
           { key: 'heat', label: '制热', icon: '🔥' },
@@ -88,7 +88,7 @@ const RemoteControl = ({
           <button
             key={modeOption.key}
             onClick={() => onChangeMode(modeOption.key)}
-            className={`py-3 px-4 rounded-lg transition-all duration-200 border-2 shadow-md ${
+            className={`py-1.5 px-8 rounded-lg transition-all duration-200 border-2 shadow-md ${
               mode === modeOption.key && isOn
                 ? 'bg-gray-600 hover:bg-gray-700 text-white border-gray-400 ring-4 ring-blue-200'
                 : 'bg-gray-500 hover:bg-gray-600 text-white border-gray-300'
@@ -100,10 +100,10 @@ const RemoteControl = ({
           </button>
         ))}
       </div>      {/* 风速和摆风控制 */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-x-10 gap-y-2">
         <button
           onClick={onChangeFanSpeed}
-          className="bg-gray-500 hover:bg-gray-600 text-white py-3 px-4 rounded-lg border-2 border-gray-300 shadow-md transition-all duration-200"
+          className="bg-gray-500 hover:bg-gray-600 text-white py-1.5 px-8 rounded-lg border-2 border-gray-300 shadow-md transition-all duration-200"
           disabled={!isOn}
         >
           <div className="text-lg mb-1">🌪️</div>
@@ -111,7 +111,7 @@ const RemoteControl = ({
         </button>        
         <button
           onClick={onToggleSwing}
-          className={`text-white py-3 px-4 rounded-lg border-2 shadow-md transition-all duration-200 ${
+          className={`text-white py-1.5 px-8 rounded-lg border-2 shadow-md transition-all duration-200 ${
             swingMode && isOn
               ? 'bg-gray-600 hover:bg-gray-700 border-gray-400 ring-4 ring-blue-200'
               : 'bg-gray-500 hover:bg-gray-600 border-gray-300'
